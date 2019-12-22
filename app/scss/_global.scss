@@ -7,11 +7,12 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    margin: 0;
 }
 a{
     display: inline-block;
@@ -28,4 +29,27 @@ li{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 16px;
+    }
+}
+.title{
+    font-family: 'Roboto';
+    text-align: center;
+    margin-bottom: 30px;
+    color: $bg;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
 }
